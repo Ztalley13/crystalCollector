@@ -1,0 +1,35 @@
+.crystal1{
+    border:1px solid blue;
+    height:200 px ;
+    width: 200px;
+    display: block;
+    justify-content:space-between center;
+    align-items: center;
+}
+
+.crystal2{
+    border:1px solid red;
+    height:200 px ;
+    width: 200px;
+    display: block;
+    justify-content:space-between center;
+    align-items: center;
+}
+
+.crystal3{
+    border:1px solid green;
+    height:200 px ;
+    width: 200px;
+    display: block;
+    justify-content:space-between center;
+    align-items: center;
+}
+
+.crystal4{
+    border:1px solid gold;
+    height:200 px ;
+    width: 200px;
+    display: block;
+    justify-content:space-between center;
+    align-items: center;
+}
