@@ -8,32 +8,60 @@
 var randomNumber;
 var win;
 var lose;
-//to show random generated number
-    randomNumber = Math.floor(Math.random() * 35) +65;
+var prior = 0;
+var start = function () {
+    $(".crystals").empty();
+
+    //to show random generated number
+randomNumber = Math.floor(Math.random() * 35) +65;
     $("#result").html('Random Results:');
-    //console.log(randomNumber);
+    console.log(randomNumber);
 
-//console.log(win);
-
+    console.log(win);
+    //Generating the crystals
 for(var i = 0; i < 4; i++){
-   // console.log("Hello World");
-  
+    console.log("Hello World");
     
-    var random = Math.floor(Math.random() * 2) +10;
-    //console.log(random);
+var random = Math.floor(Math.random() * 2) +10;
+    console.log(random);
 
-    var crystal = $("<div>");
-        crystal.attr({"class": 'crystal',
-        "data-random": random
-    });
+var crystals = $("<div>");
+        crystals.attr({
+            "class": 'crystals',
+            "data-random": random});
 
-    $("#crystals").append(crystal);
+    $(".crystals").append(crystal);
+
+    //assign value to each crystal
 
 
+start();    
+$(document).on('click', ".crystals", function () {
+   console.log($(this).attr("data-random"));
 
+    })
 }
 
-$("#crystals").on('click', function () {
-    console.log($(this).attr("data-random"));
+    var result = num + 5;
+    var num = parsInt($(this).attr("data-random"));
+    console.log(num, ' + ', result);
 
-});
+    prior += num;
+    console.log( previous);
+
+   if(prior > randomNumber){
+       lose--;
+       
+       $("#lose").html(lose);
+       start();
+    console.log("LOOOOOOOOOOOSER!!!!");
+   }
+   else if(prior === randomNumber){
+       win++;
+    console.log("Winner, Winner, Chicken Dinner!!!!!!")
+      $("#win").html(win);
+      start();
+
+   }
+
+    };

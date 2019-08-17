@@ -1,4 +1,4 @@
-.crystal1{
+.crystals{
     border:1px solid blue;
     height:200 px ;
     width: 200px;
@@ -8,7 +8,7 @@
     padding: 50px;
 }
 
-.crystal2{
+.crystals{
     border:1px solid red;
     height:200 px ;
     width: 200px;
@@ -18,7 +18,7 @@
     padding: 50px;
 }
 
-.crystal3{
+.crystals{
     border:1px solid green;
     height:200 px ;
     width: 200px;
@@ -28,7 +28,7 @@
     padding: 50px;
 }
 
-.crystal4{
+.crystals{
     border:1px solid gold;
     height:200 px ;
     width: 200px;
