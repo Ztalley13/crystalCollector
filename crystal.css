@@ -5,6 +5,7 @@
     display: block;
     justify-content:space-between center;
     align-items: center;
+    padding: 50px;
 }
 
 .crystal2{
@@ -14,6 +15,7 @@
     display: block;
     justify-content:space-between center;
     align-items: center;
+    padding: 50px;
 }
 
 .crystal3{
@@ -23,6 +25,7 @@
     display: block;
     justify-content:space-between center;
     align-items: center;
+    padding: 50px;
 }
 
 .crystal4{
@@ -32,4 +35,5 @@
     display: block;
     justify-content:space-between center;
     align-items: center;
+    padding: 50px;
 }

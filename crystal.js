@@ -8,8 +8,10 @@
 var randomNumber;
 var win;
 var lose;
-
-
+//to show random generated number
+    randomNumber = Math.floor(Math.random() * 35) +65;
+    $("#result").html('Random Results:');
+    //console.log(randomNumber);
 
 //console.log(win);
 
@@ -17,15 +19,21 @@ for(var i = 0; i < 4; i++){
    // console.log("Hello World");
   
     
-    var random = Math.floor(Math.random() * 12);
-    console.log(random)
+    var random = Math.floor(Math.random() * 2) +10;
+    //console.log(random);
+
     var crystal = $("<div>");
         crystal.attr({"class": 'crystal',
         "data-random": random
     });
 
-    $(".crystals").append(crystal);
+    $("#crystals").append(crystal);
 
 
 
 }
+
+$("#crystals").on('click', function () {
+    console.log($(this).attr("data-random"));
+
+});
